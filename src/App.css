@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+main {
+  text-align: center;
+  margin: 0;
+}
+h1 {
+    color: #6d8ca8;
+    font-size: 3.5rem;
+    margin-bottom: 3%;
+}
+.home {
+    background: #13293d;
+    color: #fff;
+    min-height: 100vh;
+    background-positon: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+.home img {
+    width: 40%;
+    margin: 30% auto 10%;
+    display: block;
+}
+.welcome {
+    margin: 0% 0 5%;
+    font-size: 1.3rem
+}
+.navigate {
+    color: yellow;
+    margin: 0% 3% 5%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+}
+.users {
+    font-size: 1rem;
+}
+.user {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: #414
+}
+.user-profile {
+    display: flex;
+    gap: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #212121;
+    width: 95%;
+    color: purple;
+    border-radius: 10px;
+    border: 1px solid #212121;
+    box-shadow: 1px 1px 5px black;
+    margin: 2% auto;
+    align-items: center;
+}
+.user-profile section {
+    border: 5px solid #212;
+    width: 75%;
+    padding: 0.3rem;
+    display:flex;
+    text-align: left;
+    background-color: #212;
+    color: white;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.user-profile:nth-child(even) {
+    flex-direction: row-reverse;
+}
+.user-profile img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #6D8CA8;
+    filter: drop-shadow(1px 1px 5px #212121);
+}
+.user-profile section h2 {
+    font-size: 1.1rem;
+}
+.user-profile section p {
+    font-size: 0.9rem;
+}
+.error_bg {
+  background-image: url('https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif');
+ min-height: 80vh;
+    margin: 5% auto;
+    color: #414;
+    font-size: 5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  background-position: center;
+}
+.error_bg p{
+    font-size: 1.5rem;
+}
+.loading {
+  background-image: url('loader.gif');
+ min-height: 80vh;
+    margin: 5% auto;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  background-position: center;
+}
+.pages {
+    display: flex;
+    width: 95%;
+    justify-content: center;
+    gap: 2px;
+    margin: 30px auto;
+}
+.pages button {
+    width: 13%;
+    padding: 0.5rem;
+    font-size:1.2rem;
+    font-weight: bold;
+    color: #414;
+    border-radius: 5px;
+    border: 1px solid white;
+}
+.child {
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 800px) {
+    .user-profile {
+        width: 35%;
+        justify-content: flex-start
+    } 
+    .user-cont{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 1px solid white;
+        justify-content: center
+    }
+    .home img {
+        width: 20%;
+        margin: 5% auto;
+    }
+    .welcome,h1 {
+    margin: 0 0;
+}
+    .pages {
+        width: 50%
+    }
+
+}
